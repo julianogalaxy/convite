@@ -10,16 +10,16 @@ Responsável técnica: Dra. Elisângela Rodrigues Mota Magalhães, CRO-SP 98531.
 
 | Uso | Endereço |
 |---|---|
-| Convite (o que a paciente recebe) | https://julianogalaxy.github.io/convite-botox-day/ |
-| **Gerador (uso interno da recepção)** | https://julianogalaxy.github.io/convite-botox-day/#gerador |
-| Versão 2: envelope 3D | https://julianogalaxy.github.io/convite-botox-day/v2-envelope-3d.html |
-| Versão 3: primeiro filme | https://julianogalaxy.github.io/convite-botox-day/v3-filme-1.html |
+| Convite (o que a paciente recebe) | https://julianogalaxy.github.io/convite/ |
+| **Gerador (uso interno da recepção)** | https://julianogalaxy.github.io/convite/#gerador |
+| Versão 2: envelope 3D | https://julianogalaxy.github.io/convite/v2-envelope-3d.html |
+| Versão 3: primeiro filme | https://julianogalaxy.github.io/convite/v3-filme-1.html |
 
 ---
 
 ## Como enviar um convite (passo a passo da recepção)
 
-1. No celular da recepção, abra o **Gerador**: `https://julianogalaxy.github.io/convite-botox-day/#gerador`.
+1. No celular da recepção, abra o **Gerador**: `https://julianogalaxy.github.io/convite/#gerador`.
    Na primeira vez, use "Adicionar à tela inicial" para virar um atalho.
 2. Preencha:
    - **Nome** da paciente (primeiro nome ou nome e sobrenome).
@@ -30,7 +30,7 @@ Responsável técnica: Dra. Elisângela Rodrigues Mota Magalhães, CRO-SP 98531.
 4. Toque em **Enviar pelo WhatsApp**. A mensagem e o link personalizado já vão preenchidos; é só enviar.
 5. Toque em **Limpar para a próxima paciente** e repita.
 
-O campo "Endereço do convite" já vem preenchido com o endereço acima. Se aparecer vazio, cole `https://julianogalaxy.github.io/convite-botox-day/`.
+O campo "Endereço do convite" já vem preenchido com o endereço acima. Se aparecer vazio, cole `https://julianogalaxy.github.io/convite/`.
 
 ### Regras importantes
 
@@ -41,12 +41,41 @@ O campo "Endereço do convite" já vem preenchido com o endereço acima. Se apar
 
 ### Formato do link
 
+O gerador cria um link curto e legível, por exemplo:
+
 ```
-https://julianogalaxy.github.io/convite-botox-day/#n=Maria%20Clara&d=2026-12-12&h=14:30&v=89000&c=Condição%20exclusiva%20para%20você
+https://julianogalaxy.github.io/convite/#Juliano-Motta.0512.1030.x2klc
 ```
 
-| Parâmetro | Significado |
+| Parte | Significado |
 |---|---|
+| `Juliano-Motta` | nome (hífen no lugar do espaço) |
+| `0512` | dia e mês (5 de dezembro) |
+| `1030` | horário (10h30), opcional |
+| `x2klc` | valor codificado (não aparece como preço no link), opcional |
+
+O valor nunca vai no texto da mensagem: a paciente vê a condição só dentro do convite. Se a descrição do valor for diferente do padrão, o gerador usa o formato completo (`#n=...&d=...&h=...&v=...&c=...`), que continua funcionando, assim como links antigos.
+
+### Mensagem enviada (modelo padrão, editável no gerador)
+
+```
+Olá, Juliano! ✨
+
+Nós, do consultório Odontologia Reabilitação Oral e Estética, junto com a Dra. Elisângela Mota Magalhães, preparamos um convite especial para você: *Botox Day* 💛
+
+📅 Sábado, 5 de dezembro
+⏰ Às 10h30
+📍 R. Eliza Laurinda da Silva, 284 · Jardim Santana, Hortolândia
+
+🎁 Reservamos uma condição exclusiva para você.
+
+Para ver todos os detalhes, é só abrir o seu convite 💌
+https://julianogalaxy.github.io/convite/#Juliano-Motta.0512.1030.x2klc
+
+Qualquer dúvida, responda esta mensagem. Será um prazer receber você! 😊
+```
+
+---|---|
 | `n` | nome |
 | `d` | data (AAAA-MM-DD) |
 | `h` | horário (HH:MM) |
